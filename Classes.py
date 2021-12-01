@@ -80,13 +80,13 @@
 # every biome is now grouped with its custom locations - the center fields are grouped seperately
 
 
-		def player_location(self):
-			global player_location
-			global active_biome
-			global option_N
-			global option_E
-			global option_S
-			global option_W
+	def player_location(self):
+		global player_location
+		global active_biome
+		global option_N
+		global option_E
+		global option_S
+		global option_W
 			
 			
     	    if player_location = 8:
