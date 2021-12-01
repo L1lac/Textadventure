@@ -71,7 +71,7 @@
 
 
     class Cell:
-        global player_location
+	global player_location
         global active_biome
         global option_N
         global option_E
@@ -88,347 +88,347 @@
 		global option_S
 		global option_W
 			
-			
-    	    if player_location = 8:
-        	    option_N = 2
+	
+	if player_location = 8:
+		option_N = 2
             	option_E = 9
             	option_S = 14
             	option_W = 7
-        	elif player_location = 9:
+	elif player_location = 9:
             	option_N = 3
             	option_E = 10
             	option_S = 15
             	option_W = 8
-        	elif player_location = 10:
+	elif player_location = 10:
             	option_N = 4
             	option_E = 11
             	option_S = 16
             	option_W = 9
-        	elif player_location = 11:
+	elif player_location = 11:
             	option_N = 5
             	option_E = 12
             	option_S = 17
             	option_W = 10
-        	elif player_location = 14:
+	elif player_location = 14:
             	option_N = 8
             	option_E = 15
             	option_S = 20
             	option_W = 13
-        	elif player_location = 15:
+	elif player_location = 15:
             	option_N = 9
             	option_E = 16
             	option_S = 21
             	option_W = 14
-        	elif player_location = 16:
+	elif player_location = 16:
             	option_N = 10
             	option_E = 17
             	option_S = 22
             	option_W = 15
-        	elif player_location = 17:
-        	    option_N = 11
+	elif player_location = 17:
+		option_N = 11
             	option_E = 18
             	option_S = 23
             	option_W = 16
-        	elif player_location = 20:
+	elif player_location = 20:
             	option_N = 14
             	option_E = 21
             	option_S = 26
             	option_W = 19
-        	elif player_location = 21:
+	elif player_location = 21:
             	option_N = 15
             	option_E = 22
             	option_S = 27
             	option_W = 20
-        	elif player_location = 22:
+	elif player_location = 22:
             	option_N = 16
             	option_E = 23
             	option_S = 28
             	option_W = 21
-        	elif player_location = 23:
+        elif player_location = 23:
             	option_N = 17
             	option_E = 24
             	option_S = 29
             	option_W = 22
-        	elif player_location = 26:
+        elif player_location = 26:
             	option_N = 20
             	option_E = 27
             	option_S = 32
             	option_W = 25
-         	elif player_location = 27:
+	elif player_location = 27:
             	option_N = 21
             	option_E = 28
             	option_S = 33
             	option_W = 26
-        	elif player_location = 28:
+        elif player_location = 28:
             	option_N = 22
             	option_E = 29
             	option_S = 34
             	option_W = 27
-        	elif player_location = 29:
-				option_N = 23
-				option_E = 30
+	elif player_location = 29:
+		option_N = 23
+		option_E = 30
             	option_S = 35
             	option_W = 28
 
 
-			elif player_location = 1 and active_biome = forest_biome:
-				option_N = 0
-				option_E = 2
-				option_S = 7
-				option_W = 0
-			elif player_location = 2 and active_biome = forest_biome:
-				option_N = 0
-				option_E = 3
-				option_S = 8
-				option_W = 
-			elif player_location = 3 and active_biome = forest_biome:
-				option_N = 0
-				option_E = 4
-				option_S = 10
-				option_W = 2
-			elif player_location = 4 and active_biome = forest_biome:
-				option_N = 0
-				option_E = 5
-				option_S = 11
-				option_W = 3
-			elif player_location = 5 and active_biome = forest_biome:
-				option_N = 0
-				option_E = 6
-				option_S = 11
-				option_W = 4
-			elif player_location = 6 and active_biome = forest_biome:
-				option_N = 0
-				option_E = N6
-				option_S = 7
-				option_W = 5
-			elif player_location = 7 and active_biome = forest_biome:
-				option_N = 1
-				option_E = 8
-				option_S = 13
-				option_W = 0
-			elif player_location = 12 and active_biome = forest_biome:
-				option_N = 6
-            	option_E = N5
-            	option_S = 18
-            	option_W = 11
-			elif player_location = 13 and active_biome = forest_biome:
+	elif player_location = 1 and active_biome = forest_biome:
+		option_N = 0
+		option_E = 2
+		option_S = 7
+		option_W = 0
+	elif player_location = 2 and active_biome = forest_biome:
+		option_N = 0
+		option_E = 3
+		option_S = 8
+		option_W = 1
+	elif player_location = 3 and active_biome = forest_biome:
+		option_N = 0
+		option_E = 4
+		option_S = 10
+		option_W = 2
+	elif player_location = 4 and active_biome = forest_biome:
+		option_N = 0
+		option_E = 5
+		option_S = 11
+		option_W = 3
+	elif player_location = 5 and active_biome = forest_biome:
+		option_N = 0
+		option_E = 6
+		option_S = 11
+		option_W = 4
+	elif player_location = 6 and active_biome = forest_biome:
+		option_N = 0
+		option_E = N6
+		option_S = 7
+		option_W = 5
+	elif player_location = 7 and active_biome = forest_biome:
+		option_N = 1
+		option_E = 8
+		option_S = 13
+		option_W = 0
+	elif player_location = 12 and active_biome = forest_biome:
+		option_N = 6
+		option_E = N5
+		option_S = 18
+		option_W = 11
+	elif player_location = 13 and active_biome = forest_biome:
+		option_N = 7
+		option_E = 14
+		option_S = 19
+		option_W = 0
+	elif player_location = 18 and active_biome = forest_biome:
+		option_N = 12
+		option_E = N4
+		option_S = 24
+		option_W = 17
+	elif player_location = 19 and active_biome = forest_biome:
+		option_N = 13
+		option_E = 20
+		option_S = 25
+		option_W = 0
+	elif player_location = 24 and active_biome = forest_biome:
+		option_N = 18
+		option_E = N3
+		option_S = 30
+		option_W = 23
+	elif player_location = 25 and active_biome = forest_biome:
+		option_N = 19
+		option_E = 26
+		option_S = 31
+		option_W = 0
+	elif player_location = 30 and active_biome = forest_biome:
+		option_N = 24
+		option_E = N2
+		option_S = 36
+		option_W = 29
+	elif player_location = 31 and active_biome = forest_biome:
+		option_N = 25
+		option_E = 32
+		option_S = W6
+		option_W = 0
+	elif player_location = 32 and active_biome = forest_biome:
+		option_N = 26
+		option_E = 33
+		option_S = W5
+		option_W = 31
+	elif player_location = 33 and active_biome = forest_biome:
+		option_N = 27
+		option_E = 34
+		option_S = W4
+		option_W = 32
+	elif player_location = 34 and active_biome = forest_biome:
+		option_N = 28
+		option_E = 35
+		option_S = W3
+		option_W = 33
+	elif player_location = 35 and active_biome = forest_biome:
+		option_N = 29
+		option_E = 36
+		option_S = W2
+		option_W = 34
+	elif player_location = 36 and active_biome = forest_biome:
+		option_N = 30
+		option_E = N1
+		option_S = W1
+		option_W = 35
+
+
+	elif player_location = 1 and active_biome = mountain_biome:
+		option_N = 0
+		option_E = 2
+		option_S = 7
+		option_W = N6
+        elif player_location = 2 and active_biome = mountain_biome:
+		option_N = 0
+		option_E = 3
+		option_S = 8
+		option_W = 1
+        elif player_location = 3 and active_biome = mountain_biome:
+		option_N = 0
+		option_E = 4
+		option_S = 9
+		option_W = 2
+        elif player_location = 4 and active_biome = mountain_biome:
+		option_N = 0
+		option_E = 5
+		option_S = 10
+		option_W = 3
+        elif player_location = 5 and active_biome = mountain_biome:
+		option_N = 0
+		option_E = 6
+		option_S = 11
+		option_W = 4
+        elif player_location = 6 and active_biome = mountain_biome:
+		option_N = 0
+		option_E = 0
+		option_S = 12
+		option_W = 5
+        elif player_location = 7 and active_biome = mountain_biome:
+		option_N = 1
+		option_E = 8
+		option_S = 13
+		option_W = N5
+        elif player_location = 12 and active_biome = mountain_biome:
+		option_N = 6
+		option_E = 0
+		option_S = 18
+		option_W = 11
+        elif player_location = 13 and active_biome = mountain_biome:
+		option_N = 7
+		option_E = 14
+		option_S = 19
+		option_W = N4
+        elif player_location = 18 and active_biome = mountain_biome:
+		option_N = 12
+		option_E = 0
+		option_S = 24
+		option_W = 17
+        elif player_location = 19 and active_biome = mountain_biome:
+		option_N = 13
+		option_E = 20
+		option_S = 25
+		option_W = N3
+        elif player_location = 24 and active_biome = mountain_biome:
+		option_N = 18
+		option_E = 0
+		option_S = 30
+		option_W = 23
+        elif player_location = 25 and active_biome = mountain_biome:
+		option_N = 19
+		option_E = 26
+		option_S = 31
+		option_W = N2
+        elif player_location = 30 and active_biome = mountain_biome:
+		option_N = 24
+		option_E = 0
+		option_S = 36
+		option_W = 29
+        elif player_location = 31 and active_biome = mountain_biome:
+		option_N = 25
+		option_E = 32
+		option_S = E1
+		option_W = N1
+	elif player_location = 32 and active_biome = mountain_biome:
+		option_N = 26
+		option_E = 33
+		option_S = E2
+		option_W = 31
+        elif player_location = 33 and active_biome = mountain_biome:
+		option_N = 27
+		option_E = 34
+		option_S = E3
+		option_W = 32
+        elif player_location = 34 and active_biome = mountain_biome:
+		option_N = 28
+		option_E = 35
+		option_S = E4
+		option_W = 33
+        elif player_location = 35 and active_biome = mountain_biome:
+		option_N = 29
+		option_E = 36
+		option_S = E5
+		option_W = 34
+        elif player_location = 36 and active_biome = mountain_biome:
+		option_N = 30
+		option_E = 0
+		option_S = E6
+		option_W = 35
+
+
+        elif player_location = 1 and active_biome = desert_biome:
+		option_N = W6
+		option_E = 2
+		option_S = 7
+		option_W = 0
+        elif player_location = 2 and active_biome = desert_biome:
+		option_N = W5
+		option_E = 3
+		option_S = 8
+		option_W = 1
+        elif player_location = 3 and active_biome = desert_biome:
+		option_N = W4
+		option_E = 4
+		option_S = 9
+		option_W = 2
+        elif player_location = 4 and active_biome = desert_biome:
+		option_N = W3
+		option_E = 5
+		option_S = 10
+		option_W = 3
+        elif player_location = 5 and active_biome = desert_biome:
+		option_N = W2
+		option_E = 6
+		option_S = 11
+		option_W = 4
+        elif player_location = 6 and active_biome = desert_biome:
+		option_N = W1
+		option_E = S1
+		option_S = 12
+		option_W = 5
+        elif player_location = 7 and active_biome = desert_biome:
+		option_N = 1
+		option_E = 8
+		option_S = 13
+		option_W = 0
+	elif player_location = 12 and active_biome = desert_biome:
+		option_N = 6
+		option_E = S2
+		option_S = 18
+		option_W = 11
+        elif player_location = 13 and active_biome = desert_biome:
             	option_N = 7
-            	option_E = 14
-            	option_S = 19
-            	option_W = 0
-			elif player_location = 18 and active_biome = forest_biome:
-            	option_N = 12
-            	option_E = N4
-            	option_S = 24
-            	option_W = 17
-			elif player_location = 19 and active_biome = forest_biome:
-            	option_N = 13
-            	option_E = 20
-            	option_S = 25
-            	option_W = 0
-			elif player_location = 24 and active_biome = forest_biome:
-            	option_N = 18
-            	option_E = N3
-            	option_S = 30
-            	option_W = 23
-			elif player_location = 25 and active_biome = forest_biome:
-            	option_N = 19
-            	option_E = 26
-            	option_S = 31
-            	option_W = 0
-			elif player_location = 30 and active_biome = forest_biome:
-            	option_N = 24
-            	option_E = N2
-            	option_S = 36
-            	option_W = 29
-			elif player_location = 31 and active_biome = forest_biome:
-            	option_N = 25
-            	option_E = 32
-            	option_S = W6
-            	option_W = 0
-			elif player_location = 32 and active_biome = forest_biome:
-            	option_N = 26
-            	option_E = 33
-            	option_S = W5
-            	option_W = 31
-			elif player_location = 33 and active_biome = forest_biome:
-            	option_N = 27
-            	option_E = 34
-            	option_S = W4
-            	option_W = 32
-			elif player_location = 34 and active_biome = forest_biome:
-            	option_N = 28
-            	option_E = 35
-            	option_S = W3
-            	option_W = 33
-			elif player_location = 35 and active_biome = forest_biome:
-            	option_N = 29
-            	option_E = 36
-            	option_S = W2
-            	option_W = 34
-			elif player_location = 36 and active_biome = forest_biome:
-            	option_N = 30
-            	option_E = N1
-            	option_S = W1
-            	option_W = 35
-
-
-			elif player_location = 1 and active_biome = mountain_biome:
-            	option_N = 0
-            	option_E = 2
-            	option_S = 7
-            	option_W = N6
-        	elif player_location = 2 and active_biome = mountain_biome:
-            	option_N = 0
-            	option_E = 3
-            	option_S = 8
-            	option_W = 1
-        	elif player_location = 3 and active_biome = mountain_biome:
-            	option_N = 0
-            	option_E = 4
-            	option_S = 9
-            	option_W = 2
-        	elif player_location = 4 and active_biome = mountain_biome:
-            	option_N = 0
-            	option_E = 5
-            	option_S = 10
-            	option_W = 3
-        	elif player_location = 5 and active_biome = mountain_biome:
-            	option_N = 0
-            	option_E = 6
-            	option_S = 11
-            	option_W = 4
-        	elif player_location = 6 and active_biome = mountain_biome:
-            	option_N = 0
-            	option_E = 0
-            	option_S = 12
-            	option_W = 5
-        	elif player_location = 7 and active_biome = mountain_biome:
-            	option_N = 1
-            	option_E = 8
-            	option_S = 13
-            	option_W = N5
-        	elif player_location = 12 and active_biome = mountain_biome:
-            	option_N = 6
-            	option_E = 0
-            	option_S = 18
-            	option_W = 11
-        	elif player_location = 13 and active_biome = mountain_biome:
-            	option_N = 7
-            	option_E = 14
-            	option_S = 19
-            	option_W = N4
-        	elif player_location = 18 and active_biome = mountain_biome:
-            	option_N = 12
-            	option_E = 0
-            	option_S = 24
-            	option_W = 17
-        	elif player_location = 19 and active_biome = mountain_biome:
-            	option_N = 13
-            	option_E = 20
-            	option_S = 25
-            	option_W = N3
-        	elif player_location = 24 and active_biome = mountain_biome:
-            	option_N = 18
-            	option_E = 0
-            	option_S = 30
-            	option_W = 23
-        	elif player_location = 25 and active_biome = mountain_biome:
-            	option_N = 19
-            	option_E = 26
-            	option_S = 31
-            	option_W = N2
-        	elif player_location = 30 and active_biome = mountain_biome:
-            	option_N = 24
-            	option_E = 0
-            	option_S = 36
-            	option_W = 29
-        	elif player_location = 31 and active_biome = mountain_biome:
-            	option_N = 25
-            	option_E = 32
-            	option_S = E1
-            	option_W = N1
-        	elif player_location = 32 and active_biome = mountain_biome:
-            	option_N = 26
-            	option_E = 33
-            	option_S = E2
-            	option_W = 31
-        	elif player_location = 33 and active_biome = mountain_biome:
-            	option_N = 27
-            	option_E = 34
-            	option_S = E3
-            	option_W = 32
-        	elif player_location = 34 and active_biome = mountain_biome:
-            	option_N = 28
-            	option_E = 35
-            	option_S = E4
-            	option_W = 33
-        	elif player_location = 35 and active_biome = mountain_biome:
-            	option_N = 29
-            	option_E = 36
-            	option_S = E5
-            	option_W = 34
-        	elif player_location = 36 and active_biome = mountain_biome:
-            	option_N = 30
-            	option_E = 0
-            	option_S = E6
-            	option_W = 35
-
-
-        	elif player_location = 1 and active_biome = desert_biome:
-            	option_N = W6
-            	option_E = 2
-            	option_S = 7
-            	option_W = 0
-        	elif player_location = 2 and active_biome = desert_biome:
-            	option_N = W5
-            	option_E = 3
-            	option_S = 8
-            	option_W = 1
-        	elif player_location = 3 and active_biome = desert_biome:
-            	option_N = W4
-            	option_E = 4
-            	option_S = 9
-            	option_W = 2
-        	elif player_location = 4 and active_biome = desert_biome:
-            	option_N = W3
-            	option_E = 5
-            	option_S = 10
-            	option_W = 3
-        	elif player_location = 5 and active_biome = desert_biome:
-            	option_N = W2
-            	option_E = 6
-            	option_S = 11
-            	option_W = 4
-        	elif player_location = 6 and active_biome = desert_biome:
-            	option_N = W1
-            	option_E = S1
-            	option_S = 12
-            	option_W = 5
-        	elif player_location = 7 and active_biome = desert_biome:
-            	option_N = 1
-            	option_E = 8
-            	option_S = 13
-            	option_W = 0
-        	elif player_location = 12 and active_biome = desert_biome:
-            	option_N = 6
-            	option_E = S2
-            	option_S = 18
-            	option_W = 11
-        	elif player_location = 13 and active_biome = desert_biome:
-            	option_N = 7
-            	option_E = 14
-            	option_S = 19
-            	option_W = 0
-        	elif player_location = 18 and active_biome = desert_biome:
-            	option_N = 12
-            	option_E = S3
-            	option_S = 24
-            	option_W = 17
-        	elif player_location = 19 and active_biome = desert_biome:
-            	option_N = 13
-            	option_E = 20
-            	option_S = 25
+		option_E = 14
+		option_S = 19
+		option_W = 0
+        elif player_location = 18 and active_biome = desert_biome:
+		option_N = 12
+		option_E = S3
+		option_S = 24
+		option_W = 17
+	elif player_location = 19 and active_biome = desert_biome:
+		option_N = 13
+		option_E = 20
+		option_S = 25
             	option_W = 0
         	elif player_location = 24 and active_biome = desert_biome:
             	option_N = 18
