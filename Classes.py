@@ -5,7 +5,7 @@
 # this belongs together (find a more stylish implementation) --> I found a more stylish implementation
 	class seed_randomness():
 		
-		def seeding_randomness():
+		def seeding_randomness(self):
 			global user_seed
 
 
@@ -732,13 +732,16 @@
 				item_menu()
 			elif battle_input = "d":
 				run_prob = randint(1, 10)
-			if run_prob = 1:
-				run = 1
-			else:
-				run = 0
-			if run = 1:
-				print("You successfully fled from battle!")
-				global_menu()
+				if run_prob = 1:
+					run = 1
+				else:
+					run = 0
+				if run = 1:
+					print("You successfully fled from battle!")
+					global_menu()
+				elif run = 0:
+					print("You failed to escape battle!")
+					battle_menu()
 			else:
 				print("Please make a valid selection")
 				battle_menu()
