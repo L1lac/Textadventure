@@ -795,33 +795,35 @@
 #first try on a function to choose which enemy to use (each of the 4 biomes get 4 possible sets of enemies that can appear in the corresponding quadrant + some unique enemies for one-time-events)
 	class RNG_system:
 
-		def choose_enemy(self, player_level, biome):
+		def choose_enemy(self):
 			global enemy_lvl
 			global encounter
-
+			global player_level
+			global active_sector
 			enemy_lvl = player_level randint(-1, 2)
 
 # thinking if it works to make an if-clause that chooses from a list of enemies so I only assign values to a list of enemies and dont have to create an own clause for each possible enemy
-			if biome == forest_1 or desert_1 or mountains_1 or swamps_1:
+			if active_sector == forest_1 or desert_1 or mountains_1 or swamps_1:
 				encounter = randint(1, 3)
 
-			elif biome == forest_2 or desert_2 or mountains_2 or swamps_2:
+			elif active_sector == forest_2 or desert_2 or mountains_2 or swamps_2:
 				encounter = randint(4, 6)
 
-			elif biome == forest_3 or desert_3 or mountains_3 or swamps_3:
+			elif active_sector == forest_3 or desert_3 or mountains_3 or swamps_3:
 				encounter = randint(7, 9)
 
-			elif biome == forest_4 or desert_4 or mountains_4 or swamps_4:
+			elif active_sector == forest_4 or desert_4 or mountains_4 or swamps_4:
 				encounter = randint(10, 12)
-
-
-#if you rewrite the lists for enemy selections and group them by biomes instead of sectors, you can put enemy selection into one single if-clause (if biome == forest_1 or desert_1 or mountains_1 or swamps_1: encounter_1 = randint(1, 3) || same for the other 3 encounters) -- DONE (looks much better now)
-
-
+		
+		
 		def enemy_listing(self):
 			global encounter
 			global active_biome
-
+			global set_1
+			global set_2
+			global set_3
+			global set_4
+			
 			encounter_val = encounter
 
 
@@ -848,13 +850,49 @@
 
 # listing enemy sets for each sector (seperated by biomes)
 
+				
+	class enemy_base:
+		global set_1
+		global set_2
+		global set_3
+		global set_4
+		global base_hp
+		global base_lvl
+		
+		base_hp = 20
+		base_lvl = 1
+		
+		
+		def enemy_form(self):
+			global variation
+			
+			variation_value = randint(1,5)
+			
+			if variation_value = 1 or 2:
+				variation = "lesser"
+			elif variation_value = 3 or 4:
+				variation = "normal"
+			elif variation_value = 5:
+				variation = "savage"
+				
+			if variation = "lesser":
+				enemy_hp = enemy_hp * .8
+				enemy
+		
+		def determine_atk(self):
+			global enemy_lvl
+			global atk_value
+			
+			atk_base = randint(1, 3)
+			atk_value = round(atk_base * (1.2 * enemy_lvl))
+
+#if you rewrite the lists for enemy selections and group them by biomes instead of sectors, you can put enemy selection into one single if-clause (if biome == forest_1 or desert_1 or mountains_1 or swamps_1: encounter_1 = randint(1, 3) || same for the other 3 encounters) -- DONE (looks much better now)
+
+		
+
 
 
 
 
     # for the enemy classes
-		def determine_atk():
-			global enemy_lvl
-
-			atk_base = randint(1, 3)
-			atk_value = round(atk_base * (1.2 * enemy_lvl))
+		
